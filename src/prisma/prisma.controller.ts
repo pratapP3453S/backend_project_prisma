@@ -18,7 +18,7 @@ export class PostgresController {
     // await this.mongoService.user.create({ 
     //   data: { email: 'test@example.com' } 
     // });
-   //pushing
+
     return { user, status: 'Logged to Postgres' };
   }
 }
