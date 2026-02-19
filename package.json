@@ -19,7 +19,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "clean:prisma": "rm -rf node_modules/@prisma/postgres-client",
-    "prisma:pg": "prisma generate --schema=./prisma/postgres/schema.prisma",
+    "prisma:pg": "prisma generate --schema=./prisma/postgres",
     "gen:all": "pnpm prisma:pg",
     "gen:fresh": "pnpm clean:prisma && pnpm gen:all",
     "postinstall": "pnpm gen:all"

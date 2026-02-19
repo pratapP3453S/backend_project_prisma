@@ -4,5 +4,5 @@ model PostgresUser {
   name      String?
   createdAt DateTime @default(now())
 
-  @@map("User")
+  @@schema("User")
 }

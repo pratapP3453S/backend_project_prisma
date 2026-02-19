@@ -7,6 +7,6 @@ export default defineConfig({
     path: './migrations',
   },
   datasource: {
-    url: env('POSTGRES_DATABASE_URL'),
+    url: env('MONGO_DATABASE_URL'),
   },
 });
