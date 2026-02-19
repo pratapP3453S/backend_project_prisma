@@ -1,8 +1,9 @@
 model PostgresUser {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
-  name      String?
-  createdAt DateTime @default(now())
+  id        Int      @id @default(autoincrement()) @map("p_user_id")
+  email     String   @unique @map("p_user_email")
+  name      String?  @map("p_user_name")
+  createdAt DateTime @default(now()) @map("p_created_at")
 
   @@schema("User")
+  @@map("User")
 }
