@@ -1,7 +1,9 @@
 import { Controller, Post } from "@nestjs/common";
 import { PostgresService } from "./postgres.service";
+import { ApiTags } from "@nestjs/swagger";
 // import { MongoService } from "./mongodb.service";
 
+@ApiTags('Users')
 @Controller('user')
 export class PostgresController {
   constructor(
